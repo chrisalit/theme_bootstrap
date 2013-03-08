@@ -1,0 +1,260 @@
+/* custom.less */
+
+// contributed by Paul Hibbitts, see http://msdn.microsoft.com/en-us/library/ie/jj583807(v=vs.85).aspx
+canvas {
+    -ms-touch-action: auto;
+}
+
+
+/* Course styling */
+
+.coursebox .enrolmenticons {
+    border: 1px dotted #DDDDDD;
+    .border-radius(3px);
+    margin-top: 0.3em;
+    padding: 3px;
+}
+
+.course-content ul li.section.main {
+    border-bottom: 2px solid #eee;
+    margin-top: 0px;
+}
+
+.course-content ul.topics li.section .content,
+.course-content ul.weeks li.section .content {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.course-content {
+    margin-top: 0px;
+}
+
+.course-content ul.topics li.section {
+    padding-bottom: 20px;
+}
+
+.course-content ul.topics li.section .summary {
+    margin-left: 25px;
+}
+
+.path-course-view .completionprogress {
+    margin-left: 25px
+}
+
+.path-course-view .completionprogress {
+    display: block;
+    float: right;
+    height: 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.tooltip {
+    display: inherit;
+    font-size: inherit;
+    opacity: inherit;
+    padding: inherit;
+    position: relative;
+    z-index: 1029;
+}
+
+select {
+    width: auto;
+}
+
+.filemanager select,
+.file-picker select {
+    height: inherit;
+    padding: inherit;
+}
+
+#page-enrol-users .user-enroller-panel .uep-search-results .user .details
+{
+    width: 237px;
+}
+
+.userenrolment .col_role .addrole {
+    background-color: #DDDDDD;
+    border: 1px outset #EEEEEE;
+}
+
+.path-mod-forum .forumheaderlist td {
+    border: 1px solid #EEEEEE;
+}
+
+.path-mod-forum .forumheaderlist,
+.forumpost {
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    .border-radius(4px);
+    .box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.05) X);
+}
+
+.forumpost .row .left {
+    float: left;
+    width: 43px;
+    overflow: hidden;
+    margin-left: 3px;
+}
+
+.forumpost .row {
+    margin-left: 0px;
+}
+
+.forumpost .subject {
+    font-weight: bold;
+}
+
+#page-mod-forum-discuss .discussioncontrol.displaymode {
+    text-align: left;
+}
+
+#page-mod-forum-discuss .discussioncontrols .discussioncontrol {
+    float: left;
+}
+
+
+/* Footer styling */
+#page-footer {
+    text-align: left;
+    font-size: 1em;
+    padding: 1em 0;
+    border-top: 2px solid #eee;
+}
+
+#page-footer .logininfo,
+#page-footer .sitelink,
+#page-footer .helplink {
+    margin: 0;
+    padding: 0;
+}
+
+/* Login menu in top nav */
+.logininfo,.langmenu {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+}
+
+.logininfo {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.langmenu form {
+    margin: 0px;
+}
+
+
+/* login page */
+.loginbox.twocolumns .loginpanel {
+    border-right: 1px solid #EEEEEE;
+}
+.loginbox.twocolumns .loginpanel,
+.loginbox.twocolumns .signuppanel {
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    float: none;
+    width: none;
+    .box-sizing(border-box);
+    display: block;
+    float: left;
+    margin-left: 2.76243%;
+    min-height: 30px;
+}
+
+// Course list
+ .coursebox {
+     border-color: #ddd;
+     border-style: dotted;
+     border-width: 1px;
+     .border-radius(4px);
+     padding: 5px;
+ }
+
+ .coursebox h3.name {
+     margin: 0px;
+ }
+
+ .coursebox .info,.coursebox .summary {
+     border: 0;
+     margin: 0px;
+     padding: 0px;
+     float: none;
+     width: none;
+     .box-sizing(border-box);
+     display: block;
+     float: left;
+     margin-left: 2.76243%;
+     min-height: 30px;
+ }
+
+ .coursebox .summary {
+     margin-top: 5px;
+ }
+
+ .coursebox .info {
+     margin-left: 0px;
+ }
+
+
+/* Calendar full view */
+.maincalendar .calendarmonth td,.maincalendar .calendarmonth th {
+    border: 1px dotted #ddd;
+}
+
+/* Positioned 45 px below nav */
+#page {
+    padding-top: 45px;
+}
+
+#dndupload-status {
+    margin-top: 45px;
+}
+
+.headermain {
+    float: left;
+    font-size: 2.3em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nav-collapse.in .langmenu {
+    float: left;
+    margin-bottom: 5px;
+}
+
+// gradebook tooltip
+div.yui3-overlay-content.yui3-widget-stdmod {
+  border: 1px solid #ddd;
+  background: #FFF url([[pix:theme|alert-overlay]]) repeat-x;
+  padding: 3px;
+}
+
+.navbar {
+    overflow: visible;
+}
+
+.navbar-fixed-top {
+    margin: 0px;
+}
+
+#page-mod-chat-gui_basic input#message {
+    max-width: 100%;
+}
+
+// from moddata.css
+#page-mod-data-view #singleimage {
+    width: auto;
+}
+
+.path-mod-data form {
+    margin-top: 10px;
+}
+
+.template_heading {
+    margin-top: 10px;
+}
