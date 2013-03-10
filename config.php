@@ -19,7 +19,8 @@
  *
  *
  * @package   Moodle Bootstrap theme
- * @copyright 2012 Bas Brands. www.sonsbeekmedia.nl
+ * @copyright 2013 Bas Brands. www.sonsbeekmedia.nl
+ * @authors Bas Brands, David Scotson
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
