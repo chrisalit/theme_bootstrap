@@ -69,6 +69,15 @@ echo $OUTPUT->doctype() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
+    <?php 
+    $modulecss = explode('-',$PAGE->pagetype);
+    if (is_array($modulecss) && count($modulecss) >1 && $modulecss[0] == 'mod') {
+        $url =  '/' . $modulecss[0] . '/' . $modulecss[1] . '/styles.css';
+        if (file_exists($CFG->dirroot . $url)) {
+        echo '<link rel="stylesheet" type="text/css" href="' . $CFG->wwwroot . $url . '" role="test"/>'; 
+        }
+    }
+    ?>
     <?php echo $html5shiv ?>
 </head>
 
@@ -81,6 +90,7 @@ echo $OUTPUT->doctype() ?>
           <a class="brand" href="#">Project name</a>
             <p class="navbar-text pull-right">
                 <?php echo $OUTPUT->login_info(); ?>
+
             </p>
         </div>
       </div>

@@ -35,11 +35,20 @@ $THEME->sheets = array(
 
 $THEME->editor_sheets = array('editor');
 
+global $DB;
+$modulelist = array();
+$modules = $DB->get_records('modules');
+foreach ($modules as $module) {
+    $modulelist[] = $module->name;
+}
+
 $THEME->plugins_exclude_sheets = array(
     'block' => array(
         'settings',
         'navigation',
-    ));
+    ),
+    'mod' => $modulelist
+    );
 
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
